@@ -20,13 +20,13 @@ Sigue estos tres sencillos pasos para generar e instalar tu nueva firma de corre
 
 ### 1. Descargar el Programa
 
-- Ve a la sección de **[Releases]([ENLACE A LA SECCIÓN RELEASES DE TU GITHUB])** de este repositorio.
-- Descarga el archivo `GeneradorDeFirmasPro.zip` que corresponde a la última versión.
+- Ve a la sección de **[Releases]https://github.com/marianoressio/generador-firmas-python/releases/tag/v1.0** de este repositorio.
+- Descarga el archivo `GeneradorDeFirmas.zip` que corresponde a la última versión.
 
 ### 2. Generar tu Firma
 
 - Descomprime el archivo `.zip` en un lugar de tu computadora (como el Escritorio).
-- Haz doble clic para ejecutar el programa `GeneradorDeFirmasPro.exe`. No necesita instalación.
+- Haz doble clic para ejecutar el programa `GeneradorDeFirmas.exe`. No necesita instalación.
 - En la aplicación:
   1.  **Selecciona el logo** de tu empresa (Disei o Conelci) en el menú desplegable.
   2.  **Completa tus datos** en los campos correspondientes (Nombre, Puesto, etc.).
@@ -65,7 +65,7 @@ Esta sección está destinada a los desarrolladores que necesiten modificar o ma
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone [URL DE TU REPOSITORIO GIT]
+    git clone https://github.com/marianoressio/generador-firmas-python
     cd nombre-del-repositorio
     ```
 2.  **Instala las dependencias:**
@@ -74,7 +74,7 @@ Esta sección está destinada a los desarrolladores que necesiten modificar o ma
     ```
 3.  **Ejecuta la aplicación:**
     ```bash
-    python generador_firmas_moderno.py
+    python generador_firmas.py
     ```
 
 ### Compilar el Ejecutable (.exe)
@@ -82,5 +82,5 @@ Esta sección está destinada a los desarrolladores que necesiten modificar o ma
 Para empaquetar la aplicación en un único archivo ejecutable, utiliza el siguiente comando de PyInstaller desde la raíz del proyecto:
 
 ```bash
-pyinstaller --onefile --windowed --name "GeneradorDeFirmasPro" --add-data "Montserrat-Bold.ttf;." --add-data "Montserrat-Medium.ttf;." --add-data "Montserrat-Regular.ttf;." --add-data "phone_icon.png;." --add-data "email_icon.png;." --add-data "web_icon.png;." --add-data "location_icon.png;." --add-data "logo_empresa1.png;." --add-data "logo_empresa2.png;." --add-data "logo_empresa3.png;." generador_firmas_moderno.py
+pyinstaller --onefile --windowed --name "GeneradorDeFirmas" --add-data "Montserrat-Bold.ttf;." --add-data "Montserrat-Medium.ttf;." --add-data "Montserrat-Regular.ttf;." --add-data "phone_icon.png;." --add-data "email_icon.png;." --add-data "web_icon.png;." --add-data "location_icon.png;." --add-data "logo_empresa1.png;." --add-data "logo_empresa2.png;." --add-data "logo_empresa3.png;." generador_firmas.py
 ```
